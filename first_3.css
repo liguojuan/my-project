@@ -1,0 +1,44 @@
+body{
+	padding:         20px;
+}
+div.All{
+	padding:         20px;
+	overflow:        auto;
+	border:          solid #999 1px;
+	background-color:#eee;
+}
+div.team{
+	padding:         20px;
+	float:           left;
+	border:          solid #999 1px;
+	background-color:white;
+	width:           160px;
+}
+div h5{
+	float:           right;
+}
+div img{
+	float:           left;
+	border:          solid #999 1px;
+}
+aside{
+	float:           right;
+	border:          solid #999 1px;
+	background-color:white;
+	width:           120px;
+}
+aside ul{
+	list-style-type: none;
+	padding:         20px;
+}
+aside ul li{
+	border:         solid #999 1px;
+}
+.img{margin-bottom: 20px;}
+section{
+	padding:         20px;
+	border:          solid #999 1px;
+	margin-left:     220px;
+	margin-right:    140px;
+	background-color:white;
+}

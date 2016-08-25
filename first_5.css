@@ -1,0 +1,96 @@
+body{background-color:         #DCDCDC;}
+header{ 
+	background-image:          url(images/logol.jpg);
+	background-repeat:         no-repeat;
+	background-color:          #404040;
+	padding:                   10px 20px 20px 30px;
+}
+header nav ul{padding:         0px 0px 0px 900px;}
+header nav ul li{display:      inline;}
+section,aside{
+	background-color:          white;
+	padding:                   0px 20px 40px 20px;
+	border:                    2px solid #C0C0C0;
+	margin:                    20px 20px 0px 20px;
+}
+section{
+	margin:                    20px 490px 20px 20px;
+	clear:                     left;
+}
+section h3{color:              #A0A0A0;}
+section h5{color:              #B0B0B0;}
+section p.pattern{text-indent: 2em;}
+section ul li{
+	list-style-type:           none;
+}
+.picture{
+	display:                   inline-block;
+	padding:                   10px 10px 10px 10px;
+	border:                    solid #DCDCDC 1px;
+    margin:                    10px 545px 10px 10px;
+    text-align:                center;
+}
+.box-set{
+	width:                     780px;
+	height:                    400px;
+	clear:                     left;
+	background-color:          white;
+}
+.box{
+	padding-right:             45px;
+	float:                     left;
+	width:                     100px;
+	background:                white;
+	margin-bottom:             20px;
+
+}
+section table{
+	border-collapse:           collapse;
+	border-color:              #C8C8C8;
+}
+section table tr td{
+	width:                     500px;
+	padding:                   5px;
+	border-color:              #C8C8C8;
+}
+section table tr td.format{
+	width:                     250px;
+}
+section table tr th{
+	background-color:          #404040;
+	text-align:                left;
+}
+section table tfoot{
+	background-color:          #A0A0A0;
+}
+/*边栏部分*/
+aside{
+	float:                    right;
+	width:                    400px;
+
+}
+aside h3 span{
+	font-size:                 40px;
+	color:                     #DCDCDC;
+}
+aside form{display:            table;}
+aside form div{
+	display:                   table-row;
+}
+aside form div label{
+	display:                   table-cell;
+	vertical-align:            top;
+	text-align:                right;
+    padding:                   5px 20px 5px 20px;
+}
+
+.submit{margin-top:            10px;}
+/*页脚部分*/
+footer{
+	background-color:          black;
+	color:                     white;
+	text-align:                center;
+	padding:                   15px;
+	margin-top:                20px;
+	clear:                     left;
+}
