@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+  	<li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+(function () {
+  var aqi_list=document.getElementById("aqi-list");
+  window.onload=function()
+  {
+    for(var i=0 ; i < aqiData.length ; i++ ){
+      if(aqiData[i][1] <= 60){
+        var bad=document.createElement("li");
+        var bad_air=document.createTextNode(aqiData[i][0]+"空气质量状况为:差;");
+        bad.appendChild(bad_air);
+        aqi_list.appendChild(bad);
+      } else if (60 < aqiData[i][1] <= 90){
+        var ok=document.createElement("li");
+        var ok_air=document.createTextNode(aqiData[i][0]+"空气质量状况为:良;");
+        ok.appendChild(ok_air);
+        aqi_list.appendChild(ok);
+      } else {
+        var good=document.createElement("li");
+        var good_air=document.createTextNode(aqiData[i][0]+"空气质量状况为:优;");
+        good.appendChild(good_air);
+        aqi_list.appendChild(good);
+      } 
+    }
+ }
+
+})();
+
+</script>
+</body>
+</html>
