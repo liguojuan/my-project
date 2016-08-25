@@ -1,22 +1,19 @@
 function btnHandle() {
 	
-	var oname1 = document.getElementById('name1');
-	var oname2 = document.getElementById('name2');
+	var oname1 = document.getElementById('name');
+	var oname2 = document.getElementById('name-1');
 
-    var Regchinese = /[\u4E00-\u9FA5]/g;//汉字
-    var regochinese = /[^\u4E00-\u9FA5\uf900-\ufa2d]/g; //匹配非中文
-    var Regblank = /^\s+|\s+$/g;  // 删除字符串两侧的空白字符
+    var Regchinese = /[\u4E00-\u9FA5]/g;
+    var regochinese = /[^\u4E00-\u9FA5\uf900-\ufa2d]/g;
+    var Regblank = /^\s+|\s+$/g; 
 
-    // 计算中文字符长度
     var source = oname1.value;
     var otemp = source.replace(Regblank,'').replace(Regchinese, '');
     var itxt = otemp.length;
 
-    // 计算非中文字符长度
     var temp = source.replace(Regblank,'').replace(regochinese,''); 
     var txt = temp.length;
 
-    //中文和非中文加起来总字符数
     var otxt = txt + itxt;
 
 	if (otxt==0) {
